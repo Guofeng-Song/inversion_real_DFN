@@ -5,7 +5,7 @@ clc
 %define the cell to save all results for 20 seeds
  
 for m=1:1:20
-    stri_test=['I:\stanford_research\standford_paper\general_distribution\paper\corre_new\fracture_inversion_with_particle_tracers&FCNN\generate_source\example\OutputSimulation',num2str(m)]
+    stri_test=['.\example\OutputSimulation',num2str(m)]
     
     path_pdfnew=fullfile(stri_test,'\pdfnew\')
     path=fullfile(stri_test,'\pdf\')
@@ -23,7 +23,7 @@ for m=1:1:20
             z(i,1)=x(i,1);
             z(i,2)=(x(i+1,1)-x(i,1))*x(i,2);
         end
-     save(['I:\stanford_research\standford_paper\general_distribution\paper\corre_new\fracture_inversion_with_particle_tracers&FCNN\generate_source\example\OutputSimulation',num2str(m),'\pdfnew\pdf',B,'.txt'],'z','-ascii');  
+     save(['.\example\OutputSimulation',num2str(m),'\pdfnew\pdf',B,'.txt'],'z','-ascii');  
     end
     
 end
