@@ -38,11 +38,11 @@ def pdf2ICDF(pdf, x=np.round(np.linspace(0.01, 0.99, 50), 2)):
 
 
 '''pickle p,a and ICDF for uncorrelated simulations'''
-input_filename = 'I:/stanford_research/standford_paper/general_distribution/paper/corre_new/fracture_inversion_with_particle_tracers&FCNN/generate_source/example/p_a_example.txt'
+input_filename = './example/p_a_example.txt'
 input_CD = np.loadtxt(fname=input_filename)
 
 
-pdf_filename = 'I:/stanford_research/standford_paper/general_distribution/paper/corre_new/fracture_inversion_with_particle_tracers&FCNN/generate_source/example/corr_20pdf_example.pkl'
+pdf_filename = './example/corr_20pdf_example.pkl'
 with open(pdf_filename, 'rb') as file:
     [pdf_simu] = pkl.load(file)
 
@@ -60,7 +60,7 @@ for pdf_key in pdf_simu.keys():
 
 # dump the input and corresponding cdf into CD_ICDF.pkl
 # with open('/Users/zitongzhou/Desktop/2021-03-02.tmp/CD_ICDF.pkl', 'wb') as file:
-with open('I:/stanford_research/standford_paper/general_distribution/paper/corre_new/fracture_inversion_with_particle_tracers&FCNN/generate_source/example/CD_ICDF_example.pkl', 'wb') as file:
+with open('./example/CD_ICDF_example.pkl', 'wb') as file:
     pkl.dump([C_D, P_cdf], file)
 
 

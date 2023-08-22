@@ -129,7 +129,7 @@ def pdf2ICDF(pdf, x=np.round(np.linspace(0.01, 0.99, 50), 2)):
 if __name__ == '__main__':
     '''merge pdf for each simulation'''
     dirs = [
-        'I:/stanford_research/standford_paper/general_distribution/paper/corre_new/fracture_inversion_with_particle_tracers&FCNN/generate_source/example'
+        './example'
         ]
     filenames = [
         # 'corr_100_20pdf.pkl',

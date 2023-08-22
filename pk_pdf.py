@@ -64,7 +64,7 @@ def count_pdf(dir):
 
 if __name__ == '__main__':
 
-    dirs=['I:/stanford_research/standford_paper/general_distribution/paper/corre_new/fracture_inversion_with_particle_tracers&FCNN/generate_source/example']
+    dirs=['./example']
 
     for dir in dirs:
         pk_pdf(dir)
